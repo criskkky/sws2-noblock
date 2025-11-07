@@ -1,6 +1,6 @@
-name: "[feature request]"
+name: "Feature Request"
 description: Suggest an idea for this project
-title: "[Feature Request]: "
+title: "[Feature Request]: Your title goes here"
 labels: enhancement
 assignees: criskkky
 body:
@@ -8,16 +8,17 @@ body:
     attributes:
       label: Describe your idea
       description: Provide a detailed description of your feature request
-      placeholder: "What would you like to see added to the project?"
+      placeholder: Explain what you want to achieve and why it would be beneficial
     validations:
       required: true
   - type: checkboxes
     attributes:
       label: Acceptance criteria
-      description: Check all that apply
+      description: Before submitting, make sure your request meets these criteria
       options:
-        - label: Should be easy to implement
-        - label: Should improve performance
-        - label: Should be useful for a wide audience
-    validations:
-      required: false
+        - label: I wrote it clearly and provided enough context.
+          required: true
+        - label: I have searched for existing issues and this is not a duplicate.
+          required: true
+        - label: I know that this is just a request and author(s) may choose to not implement it.
+          required: true

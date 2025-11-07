@@ -1,10 +1,11 @@
 {
 	"conventionalCommits.scopes": [
+		"README",
+		".vscode",
 		"workflow",
-		"README.md",
-		"plugin",
 		"translation",
-		"configs",
+		"config",
+		"src"
 	],
 	"conventionalCommits.gitmoji": false,
 }

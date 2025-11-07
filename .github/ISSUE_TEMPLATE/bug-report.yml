@@ -1,6 +1,6 @@
-name: "[bug report]"
+name: "Bug Report"
 description: Create a report for a found bug
-title: "[Bug]: "
+title: "[Bug]: Your title goes here"
 labels: bug
 assignees:
   - criskkky
@@ -10,37 +10,20 @@ body:
     attributes:
       label: Short description
       description: A clear and concise description of the bug
-      placeholder: Describe the bug
+      placeholder: Describe the bug in a few words and what should happen instead, I recommend attaching screenshots or logs if applicable.
     validations:
       required: true
   - type: textarea
     id: bug-steps
     attributes:
-      label: To reproduce
+      label: How to reproduce
       description: Steps to reproduce the issue
       placeholder: |
-        1...
-        2...
-        3...
-        ...
+        1. Do this
+        2. Then do that
+        3. Finally, observe the output
     validations:
       required: true
-  - type: textarea
-    id: correct-behavior
-    attributes:
-      label: Expected behavior
-      description: A clear and concise description of what you expected to happen
-      placeholder: Describe the expected behavior
-    validations:
-      required: true
-  - type: textarea
-    id: bug-screenshot
-    attributes:
-      label: Screenshot, logs, or other media (optional)
-      description: Attach any content that could help us understand the issue
-      placeholder: Please only include the specified content, avoid adding text here
-    validations:
-      required: false
   - type: dropdown
     id: os
     attributes:
@@ -64,11 +47,10 @@ body:
       placeholder: e.g. v1.0.0
     validations:
       required: true
-  - type: textarea
-    id: bug-context
+  - type: input
+    id: plugin-version
     attributes:
-      label: Additional context (optional)
-      description: Provide any additional context about the problem here
-      placeholder: Additional context
+      label: Plugin Version Number
+      placeholder: e.g. v1.0.0
     validations:
-      required: false
+      required: true
