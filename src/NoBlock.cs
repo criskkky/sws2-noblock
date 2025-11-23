@@ -22,15 +22,12 @@ public partial class NoBlock(ISwiftlyCore core) : BasePlugin(core)
         return;
       }
 
-      if (enable)
+      byte targetGroup = enable ? (byte)CollisionGroup.Debris : (byte)CollisionGroup.Player;
+      if (pawn.Collision.CollisionGroup != targetGroup)
       {
-        pawn.Collision.CollisionGroup = (byte)CollisionGroup.Debris;
+        pawn.Collision.CollisionGroup = targetGroup;
+        pawn.CollisionRulesChanged();
       }
-      else
-      {
-        pawn.Collision.CollisionGroup = (byte)CollisionGroup.Player;
-      }
-      pawn.CollisionRulesChanged();
     });
   }
 
