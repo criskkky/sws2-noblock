@@ -4,7 +4,7 @@ namespace NoBlock;
 
 [PluginMetadata( 
     Id = "NoBlock",
-    Version = "1.0.0",
+    Version = "1.0.1",
     Name = "NoBlock",
     Author = "criskkky",
     Description = "Disable collision between all players.",
