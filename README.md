@@ -1,42 +1,54 @@
-  <h3 align="center">[SwiftlyS2] NoBlock</h3>
+<div align="center">
 
-  <p align="center">
-    Disable collision between all players.
-    <br/>
-    <a href="https://github.com/criskkky/sws2-noblock/issues">Report Bug</a>
-    -
-    <a href="https://github.com/criskkky/sws2-noblock/issues">Request Feature</a>
-    -
-    <a href="https://github.com/criskkky/sws2-noblock/pulls">Contribute Code</a>
-  </p>
-</p>
-  <p align="center">
-  <img alt="Downloads" src="https://img.shields.io/github/downloads/criskkky/sws2-noblock/total?style=for-the-badge&color=cyan">
-  <img alt="Contributors" src="https://img.shields.io/github/contributors/criskkky/sws2-noblock?color=cyan&style=for-the-badge">
-  <img alt="Issues" src="https://img.shields.io/github/issues/criskkky/sws2-noblock?style=for-the-badge&color=cyan">
-  <br>
-  <sub>Made by <a href="https://github.com/criskkky" target="_blank">@criskkky</a> with ❤️</sub>
-</p>
+# [SwiftlyS2] NoBlock
 
-### How it works? 🤨
-By default, CS2 only allows disabling collisions between players that are on the same team, but with this plugin, you can disable collisions between all players, regardless of their team.
+[![GitHub Release](https://img.shields.io/github/v/release/criskkky/sws2-noblock?color=FFFFFF&style=flat-square)](https://github.com/criskkky/sws2-noblock/releases/latest)
+[![GitHub Issues](https://img.shields.io/github/issues/criskkky/sws2-noblock?color=FF0000&style=flat-square)](https://github.com/criskkky/sws2-noblock/issues)
+[![GitHub Downloads](https://img.shields.io/github/downloads/criskkky/sws2-noblock/total?color=blue&style=flat-square)](https://github.com/criskkky/sws2-noblock/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/criskkky/sws2-noblock?style=social)](https://github.com/criskkky/sws2-noblock/stargazers)<br/>
+  <sub>Made with ❤️ by <a href="https://github.com/criskkky" rel="noopener noreferrer" target="_blank">criskkky</a></sub>
+  <br/>
+</div>
 
-### Requeriments 📄
-1. CS2 Server 🤡
-2. [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2/releases/latest)
+## Overview
 
-### Installation 📦
-1. Download [latest release](https://github.com/criskkky/sws2-noblock/releases/latest).
-2. Extract zip content into your `/addons/swiftlys2/plugins` directory.
-3. Ready!
+Disable collision between all players. By default, CS2 only allows disabling collisions between players that are on the same team, but with this plugin, you can disable collisions between all players, regardless of their team.
 
-### Configuring the plugin 👨🏻‍💻
-- Doesn't need additional config than the one explained above ✅
+## Download Shortcuts
+<ul>
+  <li>
+    <code>📦</code>
+    <strong>&nbspDownload Latest Plugin Version</strong> ⇢
+    <a href="https://github.com/criskkky/sws2-noblock/releases/latest" target="_blank" rel="noopener noreferrer">Click Here</a>
+  </li>
+  <li>
+    <code>⚙️</code>
+    <strong>&nbspDownload Latest SwiftlyS2 Version</strong> ⇢
+    <a href="https://github.com/swiftly-solution/swiftlys2/releases/latest" target="_blank" rel="noopener noreferrer">Click Here</a>
+  </li>
+</ul>
 
-### Todo List 🎯
-- Fix [issues](https://github.com/criskkky/sws2-noblock/issues) if there's any
+## Features
+- **Disable Collisions**: Allows disabling collisions between all players, regardless of team affiliation.
+- **Plug and Play**: No configuration required; works immediately after installation and applies to all players on load.
 
-### Problems using this? 😔
-If you really need help with something that isn't explained here reach me through:
-1. @crisky [Discord](<https://discord.com/users/404372759028957231>) / [GitHub](<https://github.com/criskkky>)
-2. Opening an [issue](https://github.com/criskkky/sws2-noblock/issues)
+## Screenshots
+> No screenshots available yet.
+
+## Plugin Setup
+> [!WARNING]
+> Make sure you **have installed SwiftlyS2 Framework** before proceeding.
+
+1. Download and extract the latest plugin version into your `swiftlys2/plugins` folder.
+2. Ready!
+
+## Backend Logic (How It Works)
+1. The plugin detects all players on load and also hooks when new players spawn.
+2. It sets the collision group of each player to 'Debris'.
+3. As a result, all players can pass through each other without collision.
+
+## Support and Feedback
+Feel free to [open an issue](https://github.com/criskkky/sws2-noblock/issues/new/choose) for any bugs or feature requests. If it's all working fine, consider starring the repository to show your support!
+
+## Contribution Guidelines
+Contributions are welcome only if they align with the plugin's purpose. For major changes, please open an issue first to discuss what you would like to change.
