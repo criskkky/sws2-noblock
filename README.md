@@ -10,6 +10,11 @@
   <br/>
 </div>
 
+> [!WARNING]
+> You don't need this plugin anymore. <br/>
+> You can now disable player collisions natively in CS2 with these cvars:<br/>
+> `mp_solid_teammates 0` & `mp_solid_enemies 0`
+
 ## Overview
 
 Disable collision between all players. By default, CS2 only allows disabling collisions between players that are on the same team, but with this plugin, you can disable collisions between all players, regardless of their team.
